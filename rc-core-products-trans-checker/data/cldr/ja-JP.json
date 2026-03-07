@@ -1,0 +1,183 @@
+{
+  "locale": "ja-JP",
+  "cldr_sources": [
+    "ja.xml",
+    "ja_JP.xml"
+  ],
+  "number_formats": {
+    "decimal_format": "0000京",
+    "percent_format": "↑↑↑",
+    "currency_format": "¤ 0000京",
+    "symbols": {
+      "decimal": "↑↑↑",
+      "group": "↑↑↑",
+      "list": "↑↑↑",
+      "percentSign": "↑↑↑",
+      "plusSign": "↑↑↑",
+      "minusSign": "↑↑↑",
+      "approximatelySign": "約",
+      "exponential": "↑↑↑",
+      "superscriptingExponent": "↑↑↑",
+      "perMille": "↑↑↑",
+      "infinity": "↑↑↑",
+      "nan": "↑↑↑",
+      "timeSeparator": "↑↑↑"
+    }
+  },
+  "date_time_formats": {
+    "date_full": "y年M月d日EEEE",
+    "date_long": "y年M月d日",
+    "date_medium": "y/MM/dd",
+    "date_short": "y/MM/dd",
+    "time_full": "H時mm分ss秒 zzzz",
+    "time_long": "H:mm:ss z",
+    "time_medium": "H:mm:ss",
+    "time_short": "H:mm",
+    "day_names": {
+      "sun": "日曜日",
+      "mon": "月曜日",
+      "tue": "火曜日",
+      "wed": "水曜日",
+      "thu": "木曜日",
+      "fri": "金曜日",
+      "sat": "土曜日"
+    },
+    "month_names": {
+      "1": "1月",
+      "2": "2月",
+      "3": "3月",
+      "4": "4月",
+      "5": "5月",
+      "6": "6月",
+      "7": "7月",
+      "8": "8月",
+      "9": "9月",
+      "10": "10月",
+      "11": "11月",
+      "12": "12月"
+    },
+    "period_am": "↑↑↑",
+    "period_pm": "↑↑↑"
+  },
+  "units": {
+    "digital-petabyte": {
+      "displayName": "ペタバイト",
+      "other": "↑↑↑"
+    },
+    "digital-terabyte": {
+      "displayName": "テラバイト",
+      "other": "↑↑↑"
+    },
+    "digital-terabit": {
+      "displayName": "テラビット",
+      "other": "↑↑↑"
+    },
+    "digital-gigabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-gigabit": {
+      "displayName": "ギガビット",
+      "other": "↑↑↑"
+    },
+    "digital-megabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-megabit": {
+      "displayName": "メガビット",
+      "other": "↑↑↑"
+    },
+    "digital-kilobyte": {
+      "displayName": "KB",
+      "other": "{0} KB"
+    },
+    "digital-kilobit": {
+      "displayName": "キロビット",
+      "other": "↑↑↑"
+    },
+    "digital-byte": {
+      "displayName": "バイト",
+      "other": "↑↑↑"
+    },
+    "digital-bit": {
+      "displayName": "ビット",
+      "other": "↑↑↑"
+    },
+    "duration-century": {
+      "displayName": "世紀",
+      "other": "{0} 世紀"
+    },
+    "duration-decade": {
+      "displayName": "十年",
+      "other": "{0} 十年"
+    },
+    "duration-year": {
+      "displayName": "年",
+      "other": "{0} 年"
+    },
+    "duration-quarter": {
+      "displayName": "四半期",
+      "other": "{0}四半期"
+    },
+    "duration-month": {
+      "displayName": "か月",
+      "other": "{0} か月"
+    },
+    "duration-week": {
+      "displayName": "週間",
+      "other": "{0} 週間"
+    },
+    "duration-day": {
+      "displayName": "日",
+      "other": "{0} 日"
+    },
+    "duration-hour": {
+      "displayName": "時間",
+      "other": "{0} 時間"
+    },
+    "duration-minute": {
+      "displayName": "分",
+      "other": "{0} 分"
+    },
+    "duration-second": {
+      "displayName": "秒",
+      "other": "{0} 秒"
+    },
+    "duration-millisecond": {
+      "displayName": "ミリ秒",
+      "other": "↑↑↑"
+    },
+    "duration-microsecond": {
+      "displayName": "マイクロ秒",
+      "other": "↑↑↑"
+    },
+    "duration-nanosecond": {
+      "displayName": "ナノ秒",
+      "other": "↑↑↑"
+    },
+    "temperature-generic": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-celsius": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-kelvin": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-night": {
+      "displayName": "泊",
+      "other": "{0} 泊"
+    }
+  },
+  "plural_rules": {
+    "other": "@integer 0~15, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …"
+  }
+}

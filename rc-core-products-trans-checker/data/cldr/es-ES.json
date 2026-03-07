@@ -1,0 +1,214 @@
+{
+  "locale": "es-ES",
+  "cldr_sources": [
+    "es.xml",
+    "es_ES.xml"
+  ],
+  "number_formats": {
+    "decimal_format": "000 B",
+    "percent_format": "#,##0 %",
+    "currency_format": "000 B ¤",
+    "symbols": {
+      "decimal": ",",
+      "group": ".",
+      "list": "↑↑↑",
+      "percentSign": "↑↑↑",
+      "plusSign": "↑↑↑",
+      "minusSign": "↑↑↑",
+      "approximatelySign": "↑↑↑",
+      "exponential": "↑↑↑",
+      "superscriptingExponent": "↑↑↑",
+      "perMille": "↑↑↑",
+      "infinity": "↑↑↑",
+      "nan": "↑↑↑",
+      "timeSeparator": "↑↑↑"
+    }
+  },
+  "date_time_formats": {
+    "date_full": "EEEE, d 'de' MMMM 'de' y",
+    "date_long": "d 'de' MMMM 'de' y",
+    "date_medium": "d MMM y",
+    "date_short": "d/M/yy",
+    "time_full": "H:mm:ss (zzzz)",
+    "time_long": "H:mm:ss z",
+    "time_medium": "H:mm:ss",
+    "time_short": "H:mm",
+    "day_names": {
+      "sun": "domingo",
+      "mon": "lunes",
+      "tue": "martes",
+      "wed": "miércoles",
+      "thu": "jueves",
+      "fri": "viernes",
+      "sat": "sábado"
+    },
+    "month_names": {
+      "1": "enero",
+      "2": "febrero",
+      "3": "marzo",
+      "4": "abril",
+      "5": "mayo",
+      "6": "junio",
+      "7": "julio",
+      "8": "agosto",
+      "9": "septiembre",
+      "10": "octubre",
+      "11": "noviembre",
+      "12": "diciembre"
+    },
+    "period_am": "a. m.",
+    "period_pm": "p. m."
+  },
+  "units": {
+    "digital-petabyte": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-terabyte": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-terabit": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-gigabyte": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-gigabit": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-megabyte": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-megabit": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-kilobyte": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-kilobit": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-byte": {
+      "displayName": "B",
+      "one": "↑↑↑",
+      "other": "{0} B"
+    },
+    "digital-bit": {
+      "displayName": "b",
+      "one": "↑↑↑",
+      "other": "{0} b"
+    },
+    "duration-century": {
+      "displayName": "s.",
+      "one": "↑↑↑",
+      "other": "{0} s."
+    },
+    "duration-decade": {
+      "displayName": "déc.",
+      "one": "↑↑↑",
+      "other": "{0} déc."
+    },
+    "duration-year": {
+      "displayName": "a",
+      "one": "↑↑↑",
+      "other": "{0} a"
+    },
+    "duration-quarter": {
+      "displayName": "trim.",
+      "one": "↑↑↑",
+      "other": "{0} trim."
+    },
+    "duration-month": {
+      "displayName": "m.",
+      "one": "↑↑↑",
+      "other": "{0} m."
+    },
+    "duration-week": {
+      "displayName": "sem.",
+      "one": "↑↑↑",
+      "other": "{0} sem."
+    },
+    "duration-day": {
+      "displayName": "d",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-hour": {
+      "displayName": "horas",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-minute": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-second": {
+      "displayName": "s",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-millisecond": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-microsecond": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-nanosecond": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-generic": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-celsius": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "{0} °C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "{0} °F"
+    },
+    "temperature-kelvin": {
+      "displayName": "↑↑↑",
+      "one": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-night": {
+      "displayName": "noches",
+      "one": "{0} noche",
+      "other": "{0} noches"
+    }
+  },
+  "plural_rules": {
+    "one": "n = 1 @integer 1 @decimal 1.0, 1.00, 1.000, 1.0000",
+    "many": "e = 0 and i != 0 and i % 1000000 = 0 and v = 0 or e != 0..5 @integer 1000000, 1c6, 2c6, 3c6, 4c6, 5c6, 6c6, … @decimal 1.0000001c6, 1.1c6, 2.0000001c6, 2.1c6, 3.0000001c6, 3.1c6, …",
+    "other": "@integer 0, 2~16, 100, 1000, 10000, 100000, 1c3, 2c3, 3c3, 4c3, 5c3, 6c3, … @decimal 0.0~0.9, 1.1~1.6, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, 1.0001c3, 1.1c3, 2.0001c3, 2.1c3, 3.0001c3, 3.1c3, …"
+  }
+}

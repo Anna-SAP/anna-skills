@@ -1,0 +1,205 @@
+{
+  "total_locales": 18,
+  "locales": {
+    "en-US": {
+      "sources": [
+        "en.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "de-DE": {
+      "sources": [
+        "de.xml",
+        "de_DE.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "en-AU": {
+      "sources": [
+        "en.xml",
+        "en_001.xml",
+        "en_AU.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "en-GB": {
+      "sources": [
+        "en.xml",
+        "en_001.xml",
+        "en_GB.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "es-419": {
+      "sources": [
+        "es.xml",
+        "es_419.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "es-ES": {
+      "sources": [
+        "es.xml",
+        "es_ES.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "fi-FI": {
+      "sources": [
+        "fi.xml",
+        "fi_FI.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "fr-CA": {
+      "sources": [
+        "fr.xml",
+        "fr_CA.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "fr-FR": {
+      "sources": [
+        "fr.xml",
+        "fr_FR.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "it-IT": {
+      "sources": [
+        "it.xml",
+        "it_IT.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "ja-JP": {
+      "sources": [
+        "ja.xml",
+        "ja_JP.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "ko-KR": {
+      "sources": [
+        "ko.xml",
+        "ko_KR.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "nl-NL": {
+      "sources": [
+        "nl.xml",
+        "nl_NL.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "pt-BR": {
+      "sources": [
+        "pt.xml",
+        "pt_BR.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "pt-PT": {
+      "sources": [
+        "pt.xml",
+        "pt_PT.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "zh-CN": {
+      "sources": [
+        "zh.xml",
+        "zh_Hans.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "zh-HK": {
+      "sources": [
+        "zh.xml",
+        "zh_Hant.xml",
+        "zh_Hant_HK.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    },
+    "zh-TW": {
+      "sources": [
+        "zh.xml",
+        "zh_Hant.xml"
+      ],
+      "sections": [
+        "number_formats",
+        "date_time_formats",
+        "units"
+      ]
+    }
+  }
+}

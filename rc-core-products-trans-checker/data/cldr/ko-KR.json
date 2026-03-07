@@ -1,0 +1,183 @@
+{
+  "locale": "ko-KR",
+  "cldr_sources": [
+    "ko.xml",
+    "ko_KR.xml"
+  ],
+  "number_formats": {
+    "decimal_format": "000조",
+    "percent_format": "↑↑↑",
+    "currency_format": "¤ 000조",
+    "symbols": {
+      "decimal": "↑↑↑",
+      "group": "↑↑↑",
+      "list": "↑↑↑",
+      "percentSign": "↑↑↑",
+      "plusSign": "↑↑↑",
+      "minusSign": "↑↑↑",
+      "approximatelySign": "↑↑↑",
+      "exponential": "↑↑↑",
+      "superscriptingExponent": "↑↑↑",
+      "perMille": "↑↑↑",
+      "infinity": "↑↑↑",
+      "nan": "↑↑↑",
+      "timeSeparator": "↑↑↑"
+    }
+  },
+  "date_time_formats": {
+    "date_full": "y년 MMMM d일 EEEE",
+    "date_long": "y년 MMMM d일",
+    "date_medium": "y. M. d.",
+    "date_short": "yy. M. d.",
+    "time_full": "a h시 m분 s초 zzzz",
+    "time_long": "a h시 m분 s초 z",
+    "time_medium": "a h:mm:ss",
+    "time_short": "a h:mm",
+    "day_names": {
+      "sun": "일요일",
+      "mon": "월요일",
+      "tue": "화요일",
+      "wed": "수요일",
+      "thu": "목요일",
+      "fri": "금요일",
+      "sat": "토요일"
+    },
+    "month_names": {
+      "1": "1월",
+      "2": "2월",
+      "3": "3월",
+      "4": "4월",
+      "5": "5월",
+      "6": "6월",
+      "7": "7월",
+      "8": "8월",
+      "9": "9월",
+      "10": "10월",
+      "11": "11월",
+      "12": "12월"
+    },
+    "period_am": "오전",
+    "period_pm": "오후"
+  },
+  "units": {
+    "digital-petabyte": {
+      "displayName": "↑↑↑",
+      "other": "{0}PB"
+    },
+    "digital-terabyte": {
+      "displayName": "↑↑↑",
+      "other": "{0}TB"
+    },
+    "digital-terabit": {
+      "displayName": "↑↑↑",
+      "other": "{0}Tb"
+    },
+    "digital-gigabyte": {
+      "displayName": "↑↑↑",
+      "other": "{0}GB"
+    },
+    "digital-gigabit": {
+      "displayName": "↑↑↑",
+      "other": "{0}Gb"
+    },
+    "digital-megabyte": {
+      "displayName": "↑↑↑",
+      "other": "{0}MB"
+    },
+    "digital-megabit": {
+      "displayName": "↑↑↑",
+      "other": "{0}Mb"
+    },
+    "digital-kilobyte": {
+      "displayName": "↑↑↑",
+      "other": "{0}kB"
+    },
+    "digital-kilobit": {
+      "displayName": "↑↑↑",
+      "other": "{0}kb"
+    },
+    "digital-byte": {
+      "displayName": "↑↑↑",
+      "other": "{0}byte"
+    },
+    "digital-bit": {
+      "displayName": "↑↑↑",
+      "other": "{0}bit"
+    },
+    "duration-century": {
+      "displayName": "C",
+      "other": "{0}C"
+    },
+    "duration-decade": {
+      "displayName": "↑↑↑",
+      "other": "{0}dec"
+    },
+    "duration-year": {
+      "displayName": "년",
+      "other": "{0}년"
+    },
+    "duration-quarter": {
+      "displayName": "분기",
+      "other": "{0}분기"
+    },
+    "duration-month": {
+      "displayName": "개월",
+      "other": "{0}개월"
+    },
+    "duration-week": {
+      "displayName": "주",
+      "other": "{0}주"
+    },
+    "duration-day": {
+      "displayName": "일",
+      "other": "{0}일"
+    },
+    "duration-hour": {
+      "displayName": "시간",
+      "other": "{0}시간"
+    },
+    "duration-minute": {
+      "displayName": "분",
+      "other": "{0}분"
+    },
+    "duration-second": {
+      "displayName": "초",
+      "other": "{0}초"
+    },
+    "duration-millisecond": {
+      "displayName": "밀리초",
+      "other": "{0}ms"
+    },
+    "duration-microsecond": {
+      "displayName": "↑↑↑",
+      "other": "{0}μs"
+    },
+    "duration-nanosecond": {
+      "displayName": "↑↑↑",
+      "other": "{0}ns"
+    },
+    "temperature-generic": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-celsius": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-kelvin": {
+      "displayName": "↑↑↑",
+      "other": "{0}K"
+    },
+    "duration-night": {
+      "displayName": "박",
+      "other": "{0}박"
+    }
+  },
+  "plural_rules": {
+    "other": "@integer 0~15, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …"
+  }
+}

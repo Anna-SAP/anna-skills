@@ -1,0 +1,60 @@
+{
+  "total_languages": 18,
+  "last_fetched": "2026-03-06",
+  "languages": {
+    "de-de": {
+      "total_terms": 2466
+    },
+    "en-gb": {
+      "total_terms": 1420
+    },
+    "es-419": {
+      "total_terms": 2551
+    },
+    "es-es": {
+      "total_terms": 2291
+    },
+    "fi-fi": {
+      "total_terms": 2323
+    },
+    "fr-ca": {
+      "total_terms": 1909
+    },
+    "fr-fr": {
+      "total_terms": 2520
+    },
+    "it-it": {
+      "total_terms": 2305
+    },
+    "ja-jp": {
+      "total_terms": 2211
+    },
+    "ko-kr": {
+      "total_terms": 2299
+    },
+    "nl-nl": {
+      "total_terms": 2370
+    },
+    "pl-pl": {
+      "total_terms": 2261
+    },
+    "pt-br": {
+      "total_terms": 2400
+    },
+    "pt-pt": {
+      "total_terms": 2311
+    },
+    "ro-ro": {
+      "total_terms": 2119
+    },
+    "sv-se": {
+      "total_terms": 2040
+    },
+    "zh-cn": {
+      "total_terms": 2345
+    },
+    "zh-tw": {
+      "total_terms": 2289
+    }
+  }
+}

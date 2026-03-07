@@ -1,0 +1,184 @@
+{
+  "locale": "zh-HK",
+  "cldr_sources": [
+    "zh.xml",
+    "zh_Hant.xml",
+    "zh_Hant_HK.xml"
+  ],
+  "number_formats": {
+    "decimal_format": "000T",
+    "percent_format": "↑↑↑",
+    "currency_format": "¤ 000T",
+    "symbols": {
+      "decimal": "↑↑↑",
+      "group": "↑↑↑",
+      "list": "↑↑↑",
+      "percentSign": "↑↑↑",
+      "plusSign": "↑↑↑",
+      "minusSign": "↑↑↑",
+      "approximatelySign": "↑↑↑",
+      "exponential": "↑↑↑",
+      "superscriptingExponent": "↑↑↑",
+      "perMille": "↑↑↑",
+      "infinity": "↑↑↑",
+      "nan": "↑↑↑",
+      "timeSeparator": "↑↑↑"
+    }
+  },
+  "date_time_formats": {
+    "date_full": "y年M月d日EEEE",
+    "date_long": "↑↑↑",
+    "date_medium": "↑↑↑",
+    "date_short": "d/M/y",
+    "time_full": "ah:mm:ss [zzzz]",
+    "time_long": "ah:mm:ss [z]",
+    "time_medium": "ah:mm:ss",
+    "time_short": "ah:mm",
+    "day_names": {
+      "sun": "↑↑↑",
+      "mon": "↑↑↑",
+      "tue": "↑↑↑",
+      "wed": "↑↑↑",
+      "thu": "↑↑↑",
+      "fri": "↑↑↑",
+      "sat": "↑↑↑"
+    },
+    "month_names": {
+      "1": "↑↑↑",
+      "2": "↑↑↑",
+      "3": "↑↑↑",
+      "4": "↑↑↑",
+      "5": "↑↑↑",
+      "6": "↑↑↑",
+      "7": "↑↑↑",
+      "8": "↑↑↑",
+      "9": "↑↑↑",
+      "10": "↑↑↑",
+      "11": "↑↑↑",
+      "12": "↑↑↑"
+    },
+    "period_am": "↑↑↑",
+    "period_pm": "↑↑↑"
+  },
+  "units": {
+    "digital-petabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-terabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-terabit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-gigabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-gigabit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-megabyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-megabit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-kilobyte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-kilobit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-byte": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "digital-bit": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-century": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-decade": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-year": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-quarter": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-month": {
+      "displayName": "個月",
+      "other": "↑↑↑"
+    },
+    "duration-week": {
+      "displayName": "星期",
+      "other": "{0} 星期"
+    },
+    "duration-day": {
+      "displayName": "日",
+      "other": "{0} 日"
+    },
+    "duration-hour": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-minute": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-second": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-millisecond": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-microsecond": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-nanosecond": {
+      "displayName": "納秒",
+      "other": "{0} 納秒"
+    },
+    "temperature-generic": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "temperature-celsius": {
+      "displayName": "°C",
+      "other": "↑↑↑"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "°F",
+      "other": "↑↑↑"
+    },
+    "temperature-kelvin": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    },
+    "duration-night": {
+      "displayName": "↑↑↑",
+      "other": "↑↑↑"
+    }
+  },
+  "plural_rules": {
+    "other": "@integer 0~15, 100, 1000, 10000, 100000, 1000000, … @decimal 0.0~1.5, 10.0, 100.0, 1000.0, 10000.0, 100000.0, 1000000.0, …"
+  }
+}
