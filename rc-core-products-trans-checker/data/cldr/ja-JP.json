@@ -1,27 +1,29 @@
 {
   "locale": "ja-JP",
+  "cldr_version": "46",
   "cldr_sources": [
+    "root.xml",
     "ja.xml",
     "ja_JP.xml"
   ],
   "number_formats": {
-    "decimal_format": "0000京",
-    "percent_format": "↑↑↑",
-    "currency_format": "¤ 0000京",
+    "decimal_format": "#,##0.###",
+    "percent_format": "#,##0%",
+    "currency_format": "¤#,##0.00",
     "symbols": {
-      "decimal": "↑↑↑",
-      "group": "↑↑↑",
-      "list": "↑↑↑",
-      "percentSign": "↑↑↑",
-      "plusSign": "↑↑↑",
-      "minusSign": "↑↑↑",
+      "decimal": ".",
+      "group": ",",
+      "list": ";",
+      "percentSign": "%",
+      "plusSign": "+",
+      "minusSign": "-",
       "approximatelySign": "約",
-      "exponential": "↑↑↑",
-      "superscriptingExponent": "↑↑↑",
-      "perMille": "↑↑↑",
-      "infinity": "↑↑↑",
-      "nan": "↑↑↑",
-      "timeSeparator": "↑↑↑"
+      "exponential": "E",
+      "superscriptingExponent": "×",
+      "perMille": "‰",
+      "infinity": "∞",
+      "nan": "NaN",
+      "timeSeparator": ":"
     }
   },
   "date_time_formats": {
@@ -56,37 +58,37 @@
       "11": "11月",
       "12": "12月"
     },
-    "period_am": "↑↑↑",
-    "period_pm": "↑↑↑"
+    "period_am": "午前",
+    "period_pm": "午後"
   },
   "units": {
     "digital-petabyte": {
       "displayName": "ペタバイト",
-      "other": "↑↑↑"
+      "other": "{0} PB"
     },
     "digital-terabyte": {
       "displayName": "テラバイト",
-      "other": "↑↑↑"
+      "other": "{0} TB"
     },
     "digital-terabit": {
       "displayName": "テラビット",
-      "other": "↑↑↑"
+      "other": "{0} Tb"
     },
     "digital-gigabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "GB",
+      "other": "{0} GB"
     },
     "digital-gigabit": {
       "displayName": "ギガビット",
-      "other": "↑↑↑"
+      "other": "{0} Gb"
     },
     "digital-megabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "MB",
+      "other": "{0} MB"
     },
     "digital-megabit": {
       "displayName": "メガビット",
-      "other": "↑↑↑"
+      "other": "{0} Mb"
     },
     "digital-kilobyte": {
       "displayName": "KB",
@@ -94,15 +96,15 @@
     },
     "digital-kilobit": {
       "displayName": "キロビット",
-      "other": "↑↑↑"
+      "other": "{0} kb"
     },
     "digital-byte": {
       "displayName": "バイト",
-      "other": "↑↑↑"
+      "other": "{0} byte"
     },
     "digital-bit": {
       "displayName": "ビット",
-      "other": "↑↑↑"
+      "other": "{0} bit"
     },
     "duration-century": {
       "displayName": "世紀",
@@ -146,35 +148,35 @@
     },
     "duration-millisecond": {
       "displayName": "ミリ秒",
-      "other": "↑↑↑"
+      "other": "{0} ms"
     },
     "duration-microsecond": {
       "displayName": "マイクロ秒",
-      "other": "↑↑↑"
+      "other": "{0} μs"
     },
     "duration-nanosecond": {
       "displayName": "ナノ秒",
-      "other": "↑↑↑"
-    },
-    "temperature-generic": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-celsius": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-fahrenheit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-kelvin": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "other": "{0} ns"
     },
     "duration-night": {
       "displayName": "泊",
       "other": "{0} 泊"
+    },
+    "temperature-generic": {
+      "displayName": "°",
+      "other": "{0}°"
+    },
+    "temperature-celsius": {
+      "displayName": "°C",
+      "other": "{0}°C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "°F",
+      "other": "{0}°F"
+    },
+    "temperature-kelvin": {
+      "displayName": "K",
+      "other": "{0} K"
     }
   },
   "plural_rules": {

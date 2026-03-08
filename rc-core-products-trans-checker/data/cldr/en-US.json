@@ -1,12 +1,15 @@
 {
   "locale": "en-US",
+  "cldr_version": "46",
   "cldr_sources": [
-    "en.xml"
+    "root.xml",
+    "en.xml",
+    "en_US.xml"
   ],
   "number_formats": {
-    "decimal_format": "000T",
+    "decimal_format": "#,##0.###",
     "percent_format": "#,##0%",
-    "currency_format": "¤ 000T",
+    "currency_format": "¤#,##0.00",
     "symbols": {
       "decimal": ".",
       "group": ",",
@@ -14,11 +17,13 @@
       "percentSign": "%",
       "plusSign": "+",
       "minusSign": "-",
+      "approximatelySign": "~",
       "exponential": "E",
       "superscriptingExponent": "×",
       "perMille": "‰",
       "infinity": "∞",
-      "nan": "NaN"
+      "nan": "NaN",
+      "timeSeparator": ":"
     }
   },
   "date_time_formats": {
@@ -53,164 +58,154 @@
       "11": "November",
       "12": "December"
     },
-    "period_am": "am",
-    "period_pm": "pm"
+    "period_am": "AM",
+    "period_pm": "PM"
   },
   "units": {
     "digital-petabyte": {
       "displayName": "PByte",
-      "one": "{0} PB",
-      "other": "{0} PB"
+      "other": "{0} PB",
+      "one": "{0} PB"
     },
     "digital-terabyte": {
       "displayName": "TByte",
-      "one": "{0} TB",
-      "other": "{0} TB"
+      "other": "{0} TB",
+      "one": "{0} TB"
     },
     "digital-terabit": {
       "displayName": "Tbit",
-      "one": "{0} Tb",
-      "other": "{0} Tb"
+      "other": "{0} Tb",
+      "one": "{0} Tb"
     },
     "digital-gigabyte": {
       "displayName": "GByte",
-      "one": "{0} GB",
-      "other": "{0} GB"
+      "other": "{0} GB",
+      "one": "{0} GB"
     },
     "digital-gigabit": {
       "displayName": "Gbit",
-      "one": "{0} Gb",
-      "other": "{0} Gb"
+      "other": "{0} Gb",
+      "one": "{0} Gb"
     },
     "digital-megabyte": {
       "displayName": "MByte",
-      "one": "{0} MB",
-      "other": "{0} MB"
+      "other": "{0} MB",
+      "one": "{0} MB"
     },
     "digital-megabit": {
       "displayName": "Mbit",
-      "one": "{0} Mb",
-      "other": "{0} Mb"
+      "other": "{0} Mb",
+      "one": "{0} Mb"
     },
     "digital-kilobyte": {
       "displayName": "kByte",
-      "one": "{0} kB",
-      "other": "{0} kB"
+      "other": "{0} kB",
+      "one": "{0} kB"
     },
     "digital-kilobit": {
       "displayName": "kbit",
-      "one": "{0} kb",
-      "other": "{0} kb"
+      "other": "{0} kb",
+      "one": "{0} kb"
     },
     "digital-byte": {
       "displayName": "byte",
-      "one": "{0} byte",
-      "other": "{0} byte"
+      "other": "{0} byte",
+      "one": "{0} byte"
     },
     "digital-bit": {
       "displayName": "bit",
-      "one": "{0} bit",
-      "other": "{0} bit"
+      "other": "{0} bit",
+      "one": "{0} bit"
     },
     "duration-century": {
       "displayName": "c",
-      "one": "{0} c",
-      "other": "{0} c"
+      "other": "{0} c",
+      "one": "{0} c"
     },
     "duration-decade": {
       "displayName": "dec",
-      "one": "{0} dec",
-      "other": "{0} dec"
+      "other": "{0} dec",
+      "one": "{0} dec"
     },
     "duration-year": {
       "displayName": "years",
-      "one": "{0} yr",
-      "other": "{0} yrs"
+      "other": "{0} yrs",
+      "one": "{0} yr"
     },
     "duration-quarter": {
       "displayName": "qtr",
-      "one": "{0} qtr",
-      "other": "{0} qtrs"
+      "other": "{0} qtrs",
+      "one": "{0} qtr"
     },
     "duration-month": {
       "displayName": "months",
-      "one": "{0} mth",
-      "other": "{0} mths"
+      "other": "{0} mths",
+      "one": "{0} mth"
     },
     "duration-week": {
       "displayName": "weeks",
-      "one": "{0} wk",
-      "other": "{0} wks"
+      "other": "{0} wks",
+      "one": "{0} wk"
     },
     "duration-day": {
       "displayName": "days",
-      "one": "{0} day",
-      "other": "{0} days"
+      "other": "{0} days",
+      "one": "{0} day"
     },
     "duration-hour": {
       "displayName": "hours",
-      "one": "{0} hr",
-      "other": "{0} hr"
+      "other": "{0} hr",
+      "one": "{0} hr"
     },
     "duration-minute": {
       "displayName": "mins",
-      "one": "{0} min",
-      "other": "{0} min"
+      "other": "{0} min",
+      "one": "{0} min"
     },
     "duration-second": {
       "displayName": "secs",
-      "one": "{0} sec",
-      "other": "{0} sec"
+      "other": "{0} sec",
+      "one": "{0} sec"
     },
     "duration-millisecond": {
       "displayName": "millisecs",
-      "one": "{0} ms",
-      "other": "{0} ms"
+      "other": "{0} ms",
+      "one": "{0} ms"
     },
     "duration-microsecond": {
       "displayName": "μsecs",
-      "one": "{0} μs",
-      "other": "{0} μs"
+      "other": "{0} μs",
+      "one": "{0} μs"
     },
     "duration-nanosecond": {
       "displayName": "nanosecs",
-      "one": "{0} ns",
-      "other": "{0} ns"
-    },
-    "temperature-generic": {
-      "displayName": "deg. temp.",
-      "one": "{0}°",
-      "other": "{0}°"
-    },
-    "temperature-celsius": {
-      "displayName": "deg. C",
-      "one": "{0}°C",
-      "other": "{0}°C"
-    },
-    "temperature-fahrenheit": {
-      "displayName": "deg. F",
-      "one": "{0}°F",
-      "other": "{0}°F"
-    },
-    "temperature-kelvin": {
-      "displayName": "K",
-      "one": "{0} K",
-      "other": "{0} K"
-    },
-    "temperature-rankine": {
-      "displayName": "°R",
-      "one": "{0} °R",
-      "other": "{0} °R"
-    },
-    "duration-fortnight": {
-      "displayName": "fw",
-      "one": "{0} fw",
-      "other": "{0} fw"
+      "other": "{0} ns",
+      "one": "{0} ns"
     },
     "duration-night": {
       "displayName": "nights",
-      "one": "{0} night",
-      "other": "{0} nights"
+      "other": "{0} nights",
+      "one": "{0} night"
+    },
+    "temperature-generic": {
+      "displayName": "deg. temp.",
+      "other": "{0}°",
+      "one": "{0}°"
+    },
+    "temperature-celsius": {
+      "displayName": "deg. C",
+      "other": "{0}°C",
+      "one": "{0}°C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "deg. F",
+      "other": "{0}°F",
+      "one": "{0}°F"
+    },
+    "temperature-kelvin": {
+      "displayName": "K",
+      "other": "{0} K",
+      "one": "{0} K"
     }
   },
   "plural_rules": {

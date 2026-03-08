@@ -1,27 +1,29 @@
 {
   "locale": "ko-KR",
+  "cldr_version": "46",
   "cldr_sources": [
+    "root.xml",
     "ko.xml",
     "ko_KR.xml"
   ],
   "number_formats": {
-    "decimal_format": "000조",
-    "percent_format": "↑↑↑",
-    "currency_format": "¤ 000조",
+    "decimal_format": "#,##0.###",
+    "percent_format": "#,##0%",
+    "currency_format": "¤#,##0.00",
     "symbols": {
-      "decimal": "↑↑↑",
-      "group": "↑↑↑",
-      "list": "↑↑↑",
-      "percentSign": "↑↑↑",
-      "plusSign": "↑↑↑",
-      "minusSign": "↑↑↑",
-      "approximatelySign": "↑↑↑",
-      "exponential": "↑↑↑",
-      "superscriptingExponent": "↑↑↑",
-      "perMille": "↑↑↑",
-      "infinity": "↑↑↑",
-      "nan": "↑↑↑",
-      "timeSeparator": "↑↑↑"
+      "decimal": ".",
+      "group": ",",
+      "list": ";",
+      "percentSign": "%",
+      "plusSign": "+",
+      "minusSign": "-",
+      "approximatelySign": "~",
+      "exponential": "E",
+      "superscriptingExponent": "×",
+      "perMille": "‰",
+      "infinity": "∞",
+      "nan": "NaN",
+      "timeSeparator": ":"
     }
   },
   "date_time_formats": {
@@ -61,47 +63,47 @@
   },
   "units": {
     "digital-petabyte": {
-      "displayName": "↑↑↑",
+      "displayName": "PB",
       "other": "{0}PB"
     },
     "digital-terabyte": {
-      "displayName": "↑↑↑",
+      "displayName": "TB",
       "other": "{0}TB"
     },
     "digital-terabit": {
-      "displayName": "↑↑↑",
+      "displayName": "Tb",
       "other": "{0}Tb"
     },
     "digital-gigabyte": {
-      "displayName": "↑↑↑",
+      "displayName": "GB",
       "other": "{0}GB"
     },
     "digital-gigabit": {
-      "displayName": "↑↑↑",
+      "displayName": "Gb",
       "other": "{0}Gb"
     },
     "digital-megabyte": {
-      "displayName": "↑↑↑",
+      "displayName": "MB",
       "other": "{0}MB"
     },
     "digital-megabit": {
-      "displayName": "↑↑↑",
+      "displayName": "Mb",
       "other": "{0}Mb"
     },
     "digital-kilobyte": {
-      "displayName": "↑↑↑",
+      "displayName": "kB",
       "other": "{0}kB"
     },
     "digital-kilobit": {
-      "displayName": "↑↑↑",
+      "displayName": "kb",
       "other": "{0}kb"
     },
     "digital-byte": {
-      "displayName": "↑↑↑",
+      "displayName": "byte",
       "other": "{0}byte"
     },
     "digital-bit": {
-      "displayName": "↑↑↑",
+      "displayName": "bit",
       "other": "{0}bit"
     },
     "duration-century": {
@@ -109,7 +111,7 @@
       "other": "{0}C"
     },
     "duration-decade": {
-      "displayName": "↑↑↑",
+      "displayName": "dec",
       "other": "{0}dec"
     },
     "duration-year": {
@@ -149,32 +151,32 @@
       "other": "{0}ms"
     },
     "duration-microsecond": {
-      "displayName": "↑↑↑",
+      "displayName": "μs",
       "other": "{0}μs"
     },
     "duration-nanosecond": {
-      "displayName": "↑↑↑",
+      "displayName": "ns",
       "other": "{0}ns"
-    },
-    "temperature-generic": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-celsius": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-fahrenheit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-kelvin": {
-      "displayName": "↑↑↑",
-      "other": "{0}K"
     },
     "duration-night": {
       "displayName": "박",
       "other": "{0}박"
+    },
+    "temperature-generic": {
+      "displayName": "°",
+      "other": "{0}°"
+    },
+    "temperature-celsius": {
+      "displayName": "°C",
+      "other": "{0}°C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "°F",
+      "other": "{0}°F"
+    },
+    "temperature-kelvin": {
+      "displayName": "K",
+      "other": "{0}K"
     }
   },
   "plural_rules": {

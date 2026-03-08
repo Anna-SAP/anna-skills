@@ -1,27 +1,30 @@
 {
   "locale": "zh-CN",
+  "cldr_version": "46",
   "cldr_sources": [
+    "root.xml",
     "zh.xml",
-    "zh_Hans.xml"
+    "zh_Hans.xml",
+    "zh_Hans_CN.xml"
   ],
   "number_formats": {
-    "decimal_format": "↑↑↑",
-    "percent_format": "↑↑↑",
-    "currency_format": "↑↑↑",
+    "decimal_format": "#,##0.###",
+    "percent_format": "#,##0%",
+    "currency_format": "¤#,##0.00",
     "symbols": {
-      "decimal": "↑↑↑",
-      "group": "↑↑↑",
-      "list": "↑↑↑",
-      "percentSign": "↑↑↑",
-      "plusSign": "↑↑↑",
-      "minusSign": "↑↑↑",
-      "approximatelySign": "↑↑↑",
-      "exponential": "↑↑↑",
-      "superscriptingExponent": "↑↑↑",
-      "perMille": "↑↑↑",
-      "infinity": "↑↑↑",
-      "nan": "↑↑↑",
-      "timeSeparator": "↑↑↑"
+      "decimal": ".",
+      "group": ",",
+      "list": ";",
+      "percentSign": "%",
+      "plusSign": "+",
+      "minusSign": "-",
+      "approximatelySign": "~",
+      "exponential": "E",
+      "superscriptingExponent": "×",
+      "perMille": "‰",
+      "infinity": "∞",
+      "nan": "NaN",
+      "timeSeparator": ":"
     }
   },
   "date_time_formats": {
@@ -31,8 +34,8 @@
     "date_short": "y/M/d",
     "time_full": "zzzz HH:mm:ss",
     "time_long": "z HH:mm:ss",
-    "time_medium": "↑↑↑",
-    "time_short": "↑↑↑",
+    "time_medium": "HH:mm:ss",
+    "time_short": "HH:mm",
     "day_names": {
       "sun": "星期日",
       "mon": "星期一",
@@ -56,45 +59,45 @@
       "11": "十一月",
       "12": "十二月"
     },
-    "period_am": "↑↑↑",
-    "period_pm": "↑↑↑"
+    "period_am": "上午",
+    "period_pm": "下午"
   },
   "units": {
     "digital-petabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "PB",
+      "other": "{0} PB"
     },
     "digital-terabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "TB",
+      "other": "{0} TB"
     },
     "digital-terabit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "Tb",
+      "other": "{0} Tb"
     },
     "digital-gigabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "GB",
+      "other": "{0} GB"
     },
     "digital-gigabit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "Gb",
+      "other": "{0} Gb"
     },
     "digital-megabyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "MB",
+      "other": "{0} MB"
     },
     "digital-megabit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "Mb",
+      "other": "{0} Mb"
     },
     "digital-kilobyte": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "kB",
+      "other": "{0} kB"
     },
     "digital-kilobit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "kb",
+      "other": "{0} kb"
     },
     "digital-byte": {
       "displayName": "B",
@@ -156,25 +159,25 @@
       "displayName": "纳秒",
       "other": "{0}纳秒"
     },
-    "temperature-generic": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-celsius": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-fahrenheit": {
-      "displayName": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-kelvin": {
-      "displayName": "↑↑↑",
-      "other": "{0}K"
-    },
     "duration-night": {
       "displayName": "晚",
       "other": "{0}晚"
+    },
+    "temperature-generic": {
+      "displayName": "°",
+      "other": "{0}°"
+    },
+    "temperature-celsius": {
+      "displayName": "°C",
+      "other": "{0}°C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "°F",
+      "other": "{0}°F"
+    },
+    "temperature-kelvin": {
+      "displayName": "K",
+      "other": "{0}K"
     }
   },
   "plural_rules": {
