@@ -1,209 +1,210 @@
 {
   "locale": "fr-CA",
+  "cldr_version": "46",
   "cldr_sources": [
+    "root.xml",
     "fr.xml",
     "fr_CA.xml"
   ],
   "number_formats": {
-    "decimal_format": "000 T",
-    "percent_format": "↑↑↑",
-    "currency_format": "000 T ¤",
+    "decimal_format": "#,##0.###",
+    "percent_format": "#,##0 %",
+    "currency_format": "#,##0.00 ¤",
     "symbols": {
-      "decimal": "↑↑↑",
+      "decimal": ",",
       "group": " ",
-      "list": "↑↑↑",
-      "percentSign": "↑↑↑",
-      "plusSign": "↑↑↑",
-      "minusSign": "↑↑↑",
+      "list": ";",
+      "percentSign": "%",
+      "plusSign": "+",
+      "minusSign": "-",
       "approximatelySign": "≈",
-      "exponential": "↑↑↑",
-      "superscriptingExponent": "↑↑↑",
-      "perMille": "↑↑↑",
-      "infinity": "↑↑↑",
-      "nan": "↑↑↑",
-      "timeSeparator": "↑↑↑"
+      "exponential": "E",
+      "superscriptingExponent": "×",
+      "perMille": "‰",
+      "infinity": "∞",
+      "nan": "NaN",
+      "timeSeparator": ":"
     }
   },
   "date_time_formats": {
-    "date_full": "↑↑↑",
-    "date_long": "↑↑↑",
-    "date_medium": "↑↑↑",
+    "date_full": "EEEE d MMMM y",
+    "date_long": "d MMMM y",
+    "date_medium": "d MMM y",
     "date_short": "y-MM-dd",
     "time_full": "HH 'h' mm 'min' ss 's' zzzz",
     "time_long": "HH 'h' mm 'min' ss 's' z",
     "time_medium": "HH 'h' mm 'min' ss 's'",
     "time_short": "HH 'h' mm",
     "day_names": {
-      "sun": "↑↑↑",
-      "mon": "↑↑↑",
-      "tue": "↑↑↑",
-      "wed": "↑↑↑",
-      "thu": "↑↑↑",
-      "fri": "↑↑↑",
-      "sat": "↑↑↑"
+      "sun": "dimanche",
+      "mon": "lundi",
+      "tue": "mardi",
+      "wed": "mercredi",
+      "thu": "jeudi",
+      "fri": "vendredi",
+      "sat": "samedi"
     },
     "month_names": {
-      "1": "↑↑↑",
-      "2": "↑↑↑",
-      "3": "↑↑↑",
-      "4": "↑↑↑",
-      "5": "↑↑↑",
-      "6": "↑↑↑",
-      "7": "↑↑↑",
-      "8": "↑↑↑",
-      "9": "↑↑↑",
-      "10": "↑↑↑",
-      "11": "↑↑↑",
-      "12": "↑↑↑"
+      "1": "janvier",
+      "2": "février",
+      "3": "mars",
+      "4": "avril",
+      "5": "mai",
+      "6": "juin",
+      "7": "juillet",
+      "8": "août",
+      "9": "septembre",
+      "10": "octobre",
+      "11": "novembre",
+      "12": "décembre"
     },
-    "period_am": "↑↑↑",
-    "period_pm": "↑↑↑"
+    "period_am": "a.m.",
+    "period_pm": "p.m."
   },
   "units": {
     "digital-petabyte": {
-      "displayName": "↑↑↑",
-      "one": "{0} Po",
-      "other": "{0} Po"
+      "displayName": "Po",
+      "other": "{0} Po",
+      "one": "{0} Po"
     },
     "digital-terabyte": {
-      "displayName": "↑↑↑",
-      "one": "{0} To",
-      "other": "{0} To"
+      "displayName": "To",
+      "other": "{0} To",
+      "one": "{0} To"
     },
     "digital-terabit": {
       "displayName": "Tb",
-      "one": "{0} Tb",
-      "other": "{0} Tb"
+      "other": "{0} Tb",
+      "one": "{0} Tb"
     },
     "digital-gigabyte": {
-      "displayName": "↑↑↑",
-      "one": "{0} Go",
-      "other": "{0} Go"
+      "displayName": "Go",
+      "other": "{0} Go",
+      "one": "{0} Go"
     },
     "digital-gigabit": {
       "displayName": "Gb",
-      "one": "{0} Gb",
-      "other": "{0} Gb"
+      "other": "{0} Gb",
+      "one": "{0} Gb"
     },
     "digital-megabyte": {
-      "displayName": "↑↑↑",
-      "one": "{0} Mo",
-      "other": "{0} Mo"
+      "displayName": "Mo",
+      "other": "{0} Mo",
+      "one": "{0} Mo"
     },
     "digital-megabit": {
       "displayName": "Mb",
-      "one": "{0} Mb",
-      "other": "{0} Mb"
+      "other": "{0} Mb",
+      "one": "{0} Mb"
     },
     "digital-kilobyte": {
-      "displayName": "↑↑↑",
-      "one": "{0} ko",
-      "other": "{0} ko"
+      "displayName": "ko",
+      "other": "{0} ko",
+      "one": "{0} ko"
     },
     "digital-kilobit": {
       "displayName": "kb",
-      "one": "{0} kb",
-      "other": "{0} kb"
+      "other": "{0} kb",
+      "one": "{0} kb"
     },
     "digital-byte": {
-      "displayName": "↑↑↑",
-      "one": "{0} o",
-      "other": "{0} o"
+      "displayName": "octet",
+      "other": "{0} o",
+      "one": "{0} o"
     },
     "digital-bit": {
-      "displayName": "↑↑↑",
-      "one": "{0} bit",
-      "other": "{0} bit"
+      "displayName": "bit",
+      "other": "{0} bit",
+      "one": "{0} bit"
     },
     "duration-century": {
-      "displayName": "↑↑↑",
-      "one": "{0} s.",
-      "other": "{0} s."
+      "displayName": "s.",
+      "other": "{0} s.",
+      "one": "{0} s."
     },
     "duration-decade": {
-      "displayName": "↑↑↑",
-      "one": "{0} déc.",
-      "other": "{0} déc."
+      "displayName": "décennies",
+      "other": "{0} déc.",
+      "one": "{0} déc."
     },
     "duration-year": {
-      "displayName": "↑↑↑",
-      "one": "↑↑↑",
-      "other": "↑↑↑"
+      "displayName": "ans",
+      "other": "{0} ans",
+      "one": "{0} an"
     },
     "duration-quarter": {
-      "displayName": "↑↑↑",
-      "one": "{0} trim.",
-      "other": "{0} trim."
+      "displayName": "trim.",
+      "other": "{0} trim.",
+      "one": "{0} trim."
     },
     "duration-month": {
-      "displayName": "↑↑↑",
-      "one": "{0} m.",
-      "other": "{0} m."
+      "displayName": "m.",
+      "other": "{0} m.",
+      "one": "{0} m."
     },
     "duration-week": {
-      "displayName": "↑↑↑",
-      "one": "{0} sem.",
-      "other": "{0} sem."
+      "displayName": "sem.",
+      "other": "{0} sem.",
+      "one": "{0} sem."
     },
     "duration-day": {
-      "displayName": "↑↑↑",
-      "one": "{0} j",
-      "other": "{0} j"
+      "displayName": "j",
+      "other": "{0} j",
+      "one": "{0} j"
     },
     "duration-hour": {
-      "displayName": "↑↑↑",
-      "one": "{0} h",
-      "other": "{0} h"
+      "displayName": "h",
+      "other": "{0} h",
+      "one": "{0} h"
     },
     "duration-minute": {
-      "displayName": "↑↑↑",
-      "one": "{0} min",
-      "other": "↑↑↑"
+      "displayName": "min",
+      "other": "{0} min",
+      "one": "{0} min"
     },
     "duration-second": {
-      "displayName": "↑↑↑",
-      "one": "{0} s",
-      "other": "{0} s"
+      "displayName": "s",
+      "other": "{0} s",
+      "one": "{0} s"
     },
     "duration-millisecond": {
-      "displayName": "↑↑↑",
-      "one": "{0} ms",
-      "other": "{0} ms"
+      "displayName": "ms",
+      "other": "{0} ms",
+      "one": "{0} ms"
     },
     "duration-microsecond": {
-      "displayName": "↑↑↑",
-      "one": "{0} μs",
-      "other": "{0} μs"
+      "displayName": "μs",
+      "other": "{0} μs",
+      "one": "{0} μs"
     },
     "duration-nanosecond": {
-      "displayName": "↑↑↑",
-      "one": "{0} ns",
-      "other": "{0} ns"
-    },
-    "temperature-generic": {
-      "displayName": "↑↑↑",
-      "one": "↑↑↑",
-      "other": "↑↑↑"
-    },
-    "temperature-celsius": {
-      "displayName": "↑↑↑",
-      "one": "{0} °C",
-      "other": "{0} °C"
-    },
-    "temperature-fahrenheit": {
-      "displayName": "↑↑↑",
-      "one": "{0} °F",
-      "other": "{0} °F"
-    },
-    "temperature-kelvin": {
-      "displayName": "↑↑↑",
-      "one": "{0} K",
-      "other": "{0} K"
+      "displayName": "ns",
+      "other": "{0} ns",
+      "one": "{0} ns"
     },
     "duration-night": {
-      "displayName": "↑↑↑",
-      "one": "{0} nuit",
-      "other": "{0} nuits"
+      "displayName": "nuits",
+      "other": "{0} nuits",
+      "one": "{0} nuit"
+    },
+    "temperature-generic": {
+      "displayName": "°",
+      "other": "{0}°"
+    },
+    "temperature-celsius": {
+      "displayName": "°C",
+      "other": "{0} °C",
+      "one": "{0} °C"
+    },
+    "temperature-fahrenheit": {
+      "displayName": "°F",
+      "other": "{0} °F",
+      "one": "{0} °F"
+    },
+    "temperature-kelvin": {
+      "displayName": "K",
+      "other": "{0} K",
+      "one": "{0} K"
     }
   },
   "plural_rules": {

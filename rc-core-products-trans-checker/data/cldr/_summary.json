@@ -1,29 +1,37 @@
 {
+  "cldr_version": "46",
+  "cldr_source": "https://github.com/unicode-org/cldr.git",
   "total_locales": 18,
   "locales": {
     "en-US": {
       "sources": [
-        "en.xml"
+        "root.xml",
+        "en.xml",
+        "en_US.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "de-DE": {
       "sources": [
+        "root.xml",
         "de.xml",
         "de_DE.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "en-AU": {
       "sources": [
+        "root.xml",
         "en.xml",
         "en_001.xml",
         "en_AU.xml"
@@ -31,11 +39,13 @@
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "en-GB": {
       "sources": [
+        "root.xml",
         "en.xml",
         "en_001.xml",
         "en_GB.xml"
@@ -43,143 +53,170 @@
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "es-419": {
       "sources": [
+        "root.xml",
         "es.xml",
         "es_419.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "es-ES": {
       "sources": [
+        "root.xml",
         "es.xml",
         "es_ES.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "fi-FI": {
       "sources": [
+        "root.xml",
         "fi.xml",
         "fi_FI.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "fr-CA": {
       "sources": [
+        "root.xml",
         "fr.xml",
         "fr_CA.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "fr-FR": {
       "sources": [
+        "root.xml",
         "fr.xml",
         "fr_FR.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "it-IT": {
       "sources": [
+        "root.xml",
         "it.xml",
         "it_IT.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "ja-JP": {
       "sources": [
+        "root.xml",
         "ja.xml",
         "ja_JP.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "ko-KR": {
       "sources": [
+        "root.xml",
         "ko.xml",
         "ko_KR.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "nl-NL": {
       "sources": [
+        "root.xml",
         "nl.xml",
         "nl_NL.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "pt-BR": {
       "sources": [
+        "root.xml",
         "pt.xml",
         "pt_BR.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "pt-PT": {
       "sources": [
+        "root.xml",
         "pt.xml",
         "pt_PT.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "zh-CN": {
       "sources": [
+        "root.xml",
         "zh.xml",
-        "zh_Hans.xml"
+        "zh_Hans.xml",
+        "zh_Hans_CN.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "zh-HK": {
       "sources": [
+        "root.xml",
         "zh.xml",
         "zh_Hant.xml",
         "zh_Hant_HK.xml"
@@ -187,18 +224,22 @@
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     },
     "zh-TW": {
       "sources": [
+        "root.xml",
         "zh.xml",
-        "zh_Hant.xml"
+        "zh_Hant.xml",
+        "zh_Hant_TW.xml"
       ],
       "sections": [
         "number_formats",
         "date_time_formats",
-        "units"
+        "units",
+        "plural_rules"
       ]
     }
   }
