@@ -60,7 +60,12 @@ def load_json(filepath):
 
 
 def load_glossary_index(locale):
-    """Load glossary as a source_term -> target_term lookup dict."""
+    """Load glossary as a source_term -> target_term lookup dict.
+
+    Includes terms with status "VALID" as well as terms with status=null,
+    which represent valid entries that haven't been explicitly marked.
+    Only excludes terms with explicit non-VALID statuses (e.g. "OBSOLETE").
+    """
     code = GLOSSARY_MAP.get(locale)
     if not code:
         return {}
@@ -69,14 +74,17 @@ def load_glossary_index(locale):
         return {}
     index = {}
     for t in data.get("terms", []):
-        if t.get("status") == "VALID":
-            src = t.get("source_term", "").lower().strip()
-            if src:
-                index[src] = {
-                    "target": t.get("target_term", ""),
-                    "pos": t.get("part_of_speech", ""),
-                    "notes": t.get("notes", ""),
-                }
+        status = t.get("status")
+        # Include VALID and null-status terms; skip explicitly invalid ones
+        if status not in (None, "VALID"):
+            continue
+        src = t.get("source_term", "").lower().strip()
+        if src:
+            index[src] = {
+                "target": t.get("target_term", ""),
+                "pos": t.get("part_of_speech", ""),
+                "notes": t.get("notes", ""),
+            }
     return index
 
 
@@ -142,17 +150,35 @@ def check_placeholder_consistency(source, target, key):
 
 
 def check_glossary_compliance(source, target, glossary_index, locale):
-    """Check if known glossary terms are translated correctly."""
+    """Check if known glossary terms are translated correctly.
+
+    Uses longest-match-first strategy: compound terms (e.g. "AI Agent") are
+    evaluated before their component words (e.g. "agent"), so that a correct
+    compound translation does not generate false-positive single-word mismatches.
+    """
     issues = []
     source_lower = source.lower()
     # Strip placeholders from source before matching
     source_clean = re.sub(r'\{[^}]+\}', ' ', source_lower)
     source_clean = re.sub(r'%[sd]', ' ', source_clean)
-    
-    for src_term, entry in glossary_index.items():
+
+    # Sort terms by length descending (longest / most-specific first)
+    sorted_terms = sorted(glossary_index.items(), key=lambda x: len(x[0]), reverse=True)
+
+    # Track words already "consumed" by a correctly-matched compound term
+    consumed_words = set()
+
+    for src_term, entry in sorted_terms:
         # Skip very short terms (< 3 chars) to avoid false positives
         if len(src_term) < 3:
             continue
+
+        term_words = src_term.lower().split()
+
+        # If every word in this term is already consumed by a longer match, skip
+        if all(w in consumed_words for w in term_words):
+            continue
+
         # Use word boundary matching
         pattern = r'\b' + re.escape(src_term) + r'\b'
         if re.search(pattern, source_clean, re.IGNORECASE):
@@ -165,6 +191,11 @@ def check_glossary_compliance(source, target, glossary_index, locale):
                     "severity": "MEDIUM",
                     "notes": entry.get("notes", ""),
                 })
+            else:
+                # Term matched and translation is correct — consume its words
+                # so shorter sub-terms don't raise spurious mismatches
+                for w in term_words:
+                    consumed_words.add(w)
     return issues
 
 
