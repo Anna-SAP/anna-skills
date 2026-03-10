@@ -98,6 +98,112 @@ Output a structured report following the template in `references/audit-format.md
 
 When issues are found, provide corrected translations in the same JSON format as the input, ready for direct integration.
 
+## ICU Format & CAT Tool Constraints
+
+RC 产品使用 ICU MessageFormat 处理复数（plural）、性别（select）等动态内容。
+翻译通过 XTM Cloud CAT 工具完成，XTM 将 ICU 结构拆解为 **inline tags**（如 `{1}`, `{2}`, `{3}`, `{4}`），
+每个 tag **只能使用恰好 1 次**，不能在 plural 分支中重复。这一约束直接影响翻译策略。
+
+### Rule 1: XTM Inline Tag 唯一性约束
+
+**原理**：XTM Cloud 将 ICU 中的变量和 plural 控制符分别映射为编号 inline tag：
+- `{1}` = `{assistantName}` (变量)
+- `{2}` = `{{#plural 0 one}}` (one 分支开始)
+- `{3}` = `{{#other}}` (other 分支开始)
+- `{4}` = `{{/plural}}` (plural 结束)
+
+**约束**：每个 tag 在 Target 中必须且只能出现 **恰好 1 次**。
+
+**常见错误**：译者想在 one 和 other 分支中各放一次 `{assistantName}`：
+```
+❌ {2}El calendario de {1} está desconectado{3}Los calendarios de {1} están desconectados{4}
+   → {1} 出现了 2 次，XTM 会报错
+```
+
+**正确做法**：将只能出现一次的变量放到 plural 结构**外部**：
+```
+✅ {1}: {2}calendario desconectado{3}calendarios desconectados{4}
+   → {1} 只出现 1 次，用冒号分隔
+```
+
+### Rule 2: 语言特定的外部连接符
+
+将变量置于 plural 外部时，各语言使用不同的连接方式：
+
+| 语言 | 连接方式 | 示例 |
+|------|---------|------|
+| de-DE, es, it, nl, pt, en | 冒号 `:` | `{1}: {2}Kalender ist...{3}Kalender sind...{4}` |
+| fr-FR, fr-CA | 冒号前加空格 ` :` | `{1} : {2}calendrier...{3}calendriers...{4}` |
+| zh-CN | "的" | `{1}的{2}日历已断开连接{3}日历已断开连接{4}` |
+| zh-HK, zh-TW | "的" + 空格 | `{1} 的 {2}行事曆已中斷連線{3}行事曆已中斷連線{4}` |
+| ja-JP | 冒号 `:` | `{1}: {2}カレンダーが切断されています{3}カレンダーが切断されています{4}` |
+| ko-KR | 冒号 `:` | `{1}: {2}캘린더 연결이 해제되었습니다{3}캘린더 연결이 해제되었습니다{4}` |
+| fi-FI | 冒号 `:` | `{1}: {2}kalenteri on...{3}kalenterien yhteys...{4}` |
+
+### Rule 3: 无复数语言的 Plural 结构保留
+
+ja-JP, ko-KR, zh-CN, zh-HK, zh-TW 在 CLDR 中只有 `other` 类别，无复数区分。
+但 **plural 标签结构必须完整保留**（one 和 other 分支内容相同）：
+
+```
+✅ {1}: {2}カレンダーが切断されています{3}カレンダーが切断されています{4}
+   → one 和 other 内容相同，但 {2}{3}{4} 结构完整
+
+❌ {1}: カレンダーが切断されています
+   → 缺少 {2}{3}{4}，XTM 会报错
+```
+
+### Rule 4: Plural 分支内的语法完整性
+
+各语言在 one/other 分支中需要变化的元素不同：
+
+| 语言 | one → other 变化点 |
+|------|-------------------|
+| de-DE | 动词变化 (ist → sind)，名词通常同形 (Kalender) |
+| es | 名词 + 形容词同步变化 (calendario desconectado → calendarios desconectados) |
+| fr | 名词 + 形容词同步变化 (calendrier déconnecté → calendriers déconnectés) |
+| it | 名词 + 形容词 + 冠词变化 (calendario disconnesso → calendari disconnessi) |
+| nl | 名词 + 动词变化 (agenda is → agenda's zijn) |
+| pt | 名词 + 形容词变化 (calendário desconectado → calendários desconectados) |
+| fi | 名词格变化 (kalenteri → kalenterien)，注意 partitive case |
+| ja/ko/zh | 无变化，两个分支内容相同 |
+
+### Rule 5: 高频 Locale 特定问题模式
+
+基于多批审查实践，以下是反复出现的 locale 特定问题：
+
+| Locale | 问题模式 | 检查建议 |
+|--------|---------|---------|
+| **fr-FR** | UI 标签首字母小写（如 `nom`, `téléphone mobile`） | 对 fr-FR 做全量 capitalization 扫描 |
+| **fi-FI** | 复合词拆分且第二部分大写（如 `Mobiili Puhelin`） | 芬兰语复合词应连写：`mobiilipuhelin` |
+| **nl-NL** | 普通名词不当大写（如 `Mobiele Telefoon`） | 需确认是否为 Style Guide 要求的 Title Case |
+| **pt-BR** | 按钮/操作文本首字母小写（如 `excluir...`） | 检查动词开头的按钮标签 |
+| **pt-PT** | 同上模式 | 同上 |
+| **fr-FR** | HTML/JSX 标签间混入换行和缩进空白 | 检查含 `<tag />` 的字符串格式 |
+| **es-ES / fr-CA** | CRM 等缩写被展开为全称导致 UI 溢出 | 检查 UI 标签场景的字符串长度 |
+
+### Rule 6: 审查严重级别定义
+
+| 级别 | 定义 | 示例 | 行动 |
+|------|------|------|------|
+| 🔴 **Critical** | 含义扭曲、事实错误、文化禁忌、严重逻辑断层 | 翻译与源文意思相反；数字/专有名词错误 | 必须修复后发布 |
+| 🟡 **Medium** | 大小写错误、术语偏好、长度膨胀、格式空白 | 首字母小写；缩写展开导致溢出 | 建议修复，不阻塞发布 |
+| ⚪ **Low** | 风格偏好、措辞优化 | 用词习惯差异 | 记录到 backlog |
+
+**"快速重大错误检查"模式下**：仅报告 Critical 级别，Medium 作为附注提及，忽略 Low。
+
+### Rule 7: Placeholder / HTML Tag 完整性检查清单
+
+审查含动态内容的字符串时，按此清单逐项验证：
+
+- [ ] 所有 `{variableName}` 在每个 locale 中均完整保留，拼写一致
+- [ ] 所有 `<tag />` 自闭合标签保留，无多余空白或换行
+- [ ] 所有 `<0>...</0>` JSX 标签正确闭合
+- [ ] `{{#plural 0 one}}...{{#other}}...{{/plural}}` 结构完整，三个控制符均存在
+- [ ] Plural 分支内的语法变化正确（名词、动词、形容词、冠词）
+- [ ] 无复数语言的 one/other 分支内容相同
+- [ ] XTM inline tag 各出现恰好 1 次
+
 ## Constraints
 
 - Output must include RCA (Root Cause Analysis) for every modification
